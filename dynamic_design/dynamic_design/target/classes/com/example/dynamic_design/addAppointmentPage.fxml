@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"  xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dynamic_design.AddAppointmentPageController">
+    <children>
+        <VBox fx:id="vetAttributesBox" prefHeight="400.0" prefWidth="138.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <VBox prefHeight="400.0" prefWidth="193.0">
+                    <children>
+                        <Label prefHeight="18.0" prefWidth="274.0" text="Vet Name:">
+                            <VBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="35.0" />
+                            </VBox.margin>
+                            <padding>
+                                <Insets right="10.0" />
+                            </padding>
+                        </Label>
+                        <ChoiceBox disable="true" prefHeight="26.0" prefWidth="181.0">
+                            <VBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </VBox.margin>
+                            <padding>
+                                <Insets right="10.0" />
+                            </padding>
+                        </ChoiceBox>
+                        <Label prefHeight="18.0" prefWidth="274.0" text="Pet Name:">
+                            <padding>
+                                <Insets right="10.0" />
+                            </padding>
+                            <VBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </VBox.margin>
+                        </Label>
+                        <TextField fx:id="petName">
+                            <VBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </VBox.margin>
+                            <padding>
+                                <Insets right="10.0" />
+                            </padding>
+                        </TextField>
+                        <Label prefHeight="18.0" prefWidth="274.0" text="Appointment Date:">
+                            <padding>
+                                <Insets right="10.0" />
+                            </padding>
+                            <VBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </VBox.margin>
+                        </Label>
+                        <DatePicker fx:id="appointmentDate" prefHeight="7.0" prefWidth="179.0">
+                            <padding>
+                                <Insets right="10.0" />
+                            </padding>
+                            <VBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </VBox.margin>
+                        </DatePicker>
+                        <Label prefHeight="18.0" prefWidth="274.0" text="Appointment Hour:">
+                            <padding>
+                                <Insets right="10.0" />
+                            </padding>
+                            <VBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </VBox.margin>
+                        </Label>
+                        <TextField fx:id="appointmentHour">
+                            <padding>
+                                <Insets right="10.0" />
+                            </padding>
+                            <VBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </VBox.margin>
+                        </TextField>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+        <VBox layoutX="201.0" prefHeight="400.0" prefWidth="399.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="201.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label prefHeight="18.0" prefWidth="274.0" text="Pet's  sickness Description:">
+                    <padding>
+                        <Insets right="10.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="35.0" />
+                    </VBox.margin>
+                </Label>
+                <TextField fx:id="sicknessDescription" prefHeight="18.0" prefWidth="238.0">
+                    <padding>
+                        <Insets right="10.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="140.0" top="10.0" />
+                    </VBox.margin>
+                </TextField>
+                <ImageView fitHeight="166.0" fitWidth="288.0" pickOnBounds="true" preserveRatio="true">
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </VBox.margin>
+
+                </ImageView>
+                <Button fx:id="addVet" mnemonicParsing="false"  prefHeight="42.0" prefWidth="250.0" text="Add An Appointment">
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </VBox.margin>
+                    <padding>
+                        <Insets right="10.0" />
+                    </padding>
+                </Button>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

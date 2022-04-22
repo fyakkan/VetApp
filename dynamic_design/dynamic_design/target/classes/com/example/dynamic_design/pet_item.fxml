@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="petItemBox" prefHeight="60.0" prefWidth="532.0" style="-fx-background-color: #DDDDDD; -fx-border-color: #143F6B; -fx-border-width: 2px;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dynamic_design.PetItemController">
+   <children>
+      <Label fx:id="name" text="Karabas">
+         <HBox.margin>
+            <Insets left="50.0" top="15.0" />
+         </HBox.margin>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="petStatusButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="67.0" text="Status">
+         <HBox.margin>
+            <Insets left="250.0" top="15.0" />
+         </HBox.margin>
+      </Button>
+      <Button fx:id="petRemoveButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="67.0" text="Remove">
+         <HBox.margin>
+            <Insets left="20.0" top="15.0" />
+         </HBox.margin>
+      </Button>
+   </children>
+</HBox>

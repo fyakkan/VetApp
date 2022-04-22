@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dynamic_design.VetPageController">
+   <children>
+      <HBox layoutX="10.0" layoutY="10.0" prefHeight="73.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="99.0" prefWidth="591.0" text="Vets">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="showAppointmentsButton" mnemonicParsing="false" onAction="#showAppointments" prefHeight="66.0" prefWidth="253.0" text="Show appointments" />
+         </children>
+      </HBox>
+      <ScrollPane layoutY="135.0" prefHeight="461.0" prefWidth="800.0" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <content>
+            <VBox prefHeight="330.0" prefWidth="600.0">
+               <children>
+                  <HBox prefHeight="110.0" prefWidth="600.0">
+                     <children>
+                        <ImageView fitHeight="117.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <VBox prefHeight="110.0" prefWidth="136.0">
+                           <children>
+                              <TextField prefHeight="56.0" prefWidth="150.0" text="Erol Külüşlü" />
+                              <TextField prefHeight="56.0" prefWidth="150.0" text="Vet ID: 1" />
+                           </children>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox prefHeight="110.0" prefWidth="382.0">
+                           <children>
+                              <TextField prefHeight="110.0" prefWidth="380.0" text="Address: XXX" />
+                              <Button fx:id="addAnAppointment1" mnemonicParsing="false" onAction="#addAnAppointment" prefHeight="26.0" prefWidth="373.0" text="Add An Appointment" />
+                           </children>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="110.0" prefWidth="600.0">
+                     <children>
+                        <ImageView fitHeight="107.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <VBox prefHeight="110.0" prefWidth="136.0">
+                           <children>
+                              <TextField prefHeight="56.0" prefWidth="150.0" text="Süleyman Can Şimşek" />
+                              <TextField prefHeight="56.0" prefWidth="150.0" text="Vet ID: 2" />
+                           </children>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox prefHeight="110.0" prefWidth="382.0">
+                           <children>
+                              <TextField prefHeight="109.0" prefWidth="382.0" text="Address: XXX" />
+                              <Button fx:id="addAnAppointment2" mnemonicParsing="false" onAction="#addAnAppointment" prefHeight="26.0" prefWidth="373.0" text="Add An Appointment" />
+                           </children>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="110.0" prefWidth="600.0">
+                     <children>
+                        <ImageView fitHeight="93.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <VBox prefHeight="110.0" prefWidth="136.0">
+                           <children>
+                              <TextField prefHeight="56.0" prefWidth="150.0" text="Furkan Yakkan" />
+                              <TextField prefHeight="56.0" prefWidth="150.0" text="Vet ID: 3" />
+                           </children>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox prefHeight="110.0" prefWidth="382.0">
+                           <children>
+                              <TextField prefHeight="73.0" prefWidth="380.0" text="Address: XXX" />
+                              <Button fx:id="addAnAppointment3" mnemonicParsing="false" onAction="#addAnAppointment" prefHeight="26.0" prefWidth="373.0" text="Add An Appointment" />
+                           </children>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

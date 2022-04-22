@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<?import javafx.scene.control.Button?>
+<AnchorPane fx:id="statusPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dynamic_design.StatusPageController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <HBox fx:id="statusPageTitleBox" alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #BBBBBB;">
+               <children>
+                  <Label fx:id="statusPageTitle" prefHeight="35.0" prefWidth="156.0" text="Pet Status">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" layoutY="50.0" prefHeight="350.0" prefWidth="300.0" style="-fx-background-color: #DDDDDD;">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="300.0" style="-fx-border-radius: 10PX; -fx-border-color: #CCCCCC;">
+                     <children>
+                        <Label text="Name: ">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="statusPetName" text="null">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="300.0" style="-fx-border-radius: 10PX; -fx-border-color: #CCCCCC;">
+                     <children>
+                        <Label text="Type:">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="statusPetType" text="null">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="300.0" style="-fx-border-radius: 10PX; -fx-border-color: #CCCCCC;">
+                     <children>
+                        <Label text="Age:">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="statusPetAge" text="null">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="300.0" style="-fx-border-radius: 10PX; -fx-border-color: #CCCCCC;">
+                     <children>
+                        <Label text="Sex:">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="statusPetSex" text="null">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="300.0" style="-fx-border-radius: 10PX; -fx-border-color: #CCCCCC;">
+                     <children>
+                        <Label text="Vaccination Status:">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="statusPetVaccinationStatus" text="null">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="300.0" layoutY="50.0" prefHeight="350.0" prefWidth="300.0" style="-fx-background-color: #EEEEEE;">
+               <children>
+                  <ImageView fx:id="petImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Button fx:id="closeWindow" onAction="#closeWindow" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Close">
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

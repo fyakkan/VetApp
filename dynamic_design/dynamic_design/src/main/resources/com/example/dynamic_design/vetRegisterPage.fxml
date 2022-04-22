@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #f7f1e6;"  xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dynamic_design.VetRegisterController">
+   <left>
+      <AnchorPane prefHeight="600.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="255.0" fitWidth="367.0" layoutX="21.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+
+            </ImageView>
+            <Button fx:id="vRegisterBackButton" layoutX="21.0" layoutY="14.0" mnemonicParsing="false" onAction="#goWelcomePage" prefHeight="34.0" prefWidth="60.0" style="-fx-background-color: #636363;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="vRName" layoutX="175.0" layoutY="114.0" />
+            <TextField fx:id="vRSurname" layoutX="176.0" layoutY="152.0" />
+            <TextField fx:id="vRPhoneNumber" layoutX="175.0" layoutY="192.0" />
+            <TextField fx:id="vRMailAddress" layoutX="175.0" layoutY="226.0" />
+            <TextField fx:id="vRUsername" layoutX="176.0" layoutY="259.0" />
+            <TextField fx:id="vRPassword" layoutX="176.0" layoutY="293.0" />
+            <TextArea fx:id="vRAddress" layoutX="177.0" layoutY="340.0" prefHeight="106.0" prefWidth="149.0" />
+            <Label layoutX="116.0" layoutY="114.0" text="Name:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="105.0" layoutY="152.0" text="Surname:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="192.0" text="Phone Number:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="80.0" layoutY="226.0" text="Mail Address:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="95.0" layoutY="259.0" text="Username:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="103.0" layoutY="293.0" text="Password:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="110.0" layoutY="344.0" text="Address:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="vRegisterSignInButton" layoutX="236.0" layoutY="470.0" mnemonicParsing="false" onAction="#vetSignIn" prefHeight="31.0" prefWidth="90.0" style="-fx-background-color: #636363;" text="Sign in" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="vRegisterWrongMessage" layoutX="112.0" layoutY="72.0" prefHeight="18.0" prefWidth="218.0" textFill="RED">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="109.0" layoutY="33.0" prefHeight="38.0" prefWidth="253.0" text="Vet Register ">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane fx:id="loginPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #f7f1e6;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dynamic_design.LoginPageController">
+   <left>
+      <AnchorPane prefHeight="600.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="479.0" fitWidth="336.0" layoutX="70.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+
+            </ImageView>
+            <Button fx:id="loginBackButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goWelcomePage" style="-fx-background-color: #636363;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="144.0" layoutY="32.0" prefHeight="47.0" prefWidth="111.0" text="Login">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="104.0" layoutY="245.0" text="Username:">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="106.0" layoutY="274.0" text="Password:">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="loginUsername" layoutX="200.0" layoutY="245.0" promptText="username" />
+            <TextField fx:id="loginPassword" layoutX="201.0" layoutY="274.0" promptText="password" />
+            <Button fx:id="loginLoginButton" layoutX="237.0" layoutY="341.0" mnemonicParsing="false" onAction="#goAfterLogin" prefHeight="28.0" prefWidth="74.0" style="-fx-background-color: #636363;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <CheckBox fx:id="loginIamvetCBox" layoutX="231.0" layoutY="308.0" mnemonicParsing="false" onAction="#changeUserStatus" prefHeight="17.0" prefWidth="119.0" text="I am vet">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+            <Label fx:id="loginWrongMessage" layoutX="41.0" layoutY="201.0" prefHeight="23.0" prefWidth="309.0" textFill="RED" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
